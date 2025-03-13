@@ -22,8 +22,11 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         
+    - name: Clean dependencies  # 🛠 NEW STEP
+      run: rm -rf node_modules package-lock.json
+
     - name: Install dependencies
-      run: npm ci
-      
+      run: npm install  # Change from 'npm ci' to 'npm install'
+
     - name: Run tests
-      run: npm test 
+      run: npm test
