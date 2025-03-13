@@ -1,9 +1,8 @@
 const Event = require('../models/event.model');
 
 describe('Event Model', () => {
-  beforeEach(() => {
-    // Clear all events before each test
-    Event.getAll().length = 0;
+ beforeEach(() => {
+    Event.clearAll();  // ✅ Properly resets the events array
   });
 
   test('should create a new event', () => {
