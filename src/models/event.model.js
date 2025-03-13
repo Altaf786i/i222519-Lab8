@@ -41,6 +41,10 @@ class Event {
     return events.filter(event => event.userId === userId && event.category === category);
   }
 
+  static getAll() {
+    return this.events;
+  }
+
   static getUpcomingEvents(userId) {
     const now = new Date();
     return events
