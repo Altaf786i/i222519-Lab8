@@ -1,0 +1,26 @@
+{
+  "name": "event-planning-system",
+  "version": "1.0.0",
+  "description": "Event planning and reminder system",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": ["events", "reminders", "planning"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.2"
+  }
+} 
