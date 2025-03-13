@@ -44,6 +44,9 @@ class Event {
   static getAll() {
     return this.events;
   }
+   static clearAll() {
+    events.length = 0; // ✅ Clears the in-memory storage
+  }
 
   static getUpcomingEvents(userId) {
     const now = new Date();
